@@ -20,6 +20,7 @@
 		F633D3462B6C42CD007D12FC /* DiscountSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3452B6C42CD007D12FC /* DiscountSymbol.swift */; };
 		F633D3482B6C538A007D12FC /* SpecificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3472B6C538A007D12FC /* SpecificationModel.swift */; };
 		F633D34A2B6C5703007D12FC /* DottedSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3492B6C5703007D12FC /* DottedSpacer.swift */; };
+		F6F88CFE2B6CFD03005CF368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F88CFD2B6CFD03005CF368 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F633D3452B6C42CD007D12FC /* DiscountSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountSymbol.swift; sourceTree = "<group>"; };
 		F633D3472B6C538A007D12FC /* SpecificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificationModel.swift; sourceTree = "<group>"; };
 		F633D3492B6C5703007D12FC /* DottedSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedSpacer.swift; sourceTree = "<group>"; };
+		F6F88CFD2B6CFD03005CF368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				F6F88CF32B6CF045005CF368 /* Modules */,
 				F6F88CF42B6CF05B005CF368 /* UIElements */,
 				F6F88CFB2B6CF136005CF368 /* Resources */,
+				F6F88CFC2B6CFCEC005CF368 /* Support */,
 				F633D3352B6C31B5007D12FC /* Preview Content */,
 			);
 			path = SystemsTest;
@@ -158,6 +161,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F6F88CFC2B6CFCEC005CF368 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F6F88CFD2B6CFD03005CF368 /* Constants.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,6 +250,7 @@
 				F633D34A2B6C5703007D12FC /* DottedSpacer.swift in Sources */,
 				F633D3442B6C3F42007D12FC /* ReviewModel.swift in Sources */,
 				F6116B562B6C761800952C21 /* Method.swift in Sources */,
+				F6F88CFE2B6CFD03005CF368 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

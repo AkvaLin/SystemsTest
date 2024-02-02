@@ -46,22 +46,26 @@ struct ProductCardView: View {
                                 Divider()
                                 Text("\(model.reviews.count) отзывов")
                                     .foregroundColor(.secondary)
-                                GeometryReader { geo in
-                                    HStack {
-                                        Spacer()
-                                        DiscountSymbol()
-                                            .frame(maxWidth: geo.size.width / 4.6, alignment: .trailing)
-                                            .aspectRatio(6.5, contentMode: .fill)
-                                            .overlay (
-                                                Text("-\(model.discountPercentage)%")
-                                                    .scaleEffect(0.8, anchor: .center)
-                                                    .foregroundColor(.white)
-                                            )
+                                if model.discountPercentage == 0 {
+                                    Spacer()
+                                } else {
+                                    GeometryReader { geo in
+                                        HStack {
+                                            Spacer()
+                                            DiscountSymbol()
+                                                .frame(maxWidth: geo.size.width / 4.6, alignment: .trailing)
+                                                .aspectRatio(6.5, contentMode: .fill)
+                                                .overlay (
+                                                    Text("-\(model.discountPercentage)%")
+                                                        .scaleEffect(0.8, anchor: .center)
+                                                        .foregroundColor(.white)
+                                                )
+                                        }
                                     }
                                 }
                             }
                             Text(model.title)
-                                .font(.system(size: 34).weight(.bold))
+                                .font(Constants.Fonts.bigBold)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.vertical)
                             HStack {
@@ -76,11 +80,11 @@ struct ProductCardView: View {
                             .padding(.bottom)
                             Group {
                                 Text("Описание")
-                                    .font(.system(size: 17).weight(.semibold))
+                                    .font(Constants.Fonts.mediumSemibold)
                                 Text(model.description)
                                     .padding(.top, 2)
                                 Text("Основные характеристики")
-                                    .font(.system(size: 17).weight(.semibold))
+                                    .font(Constants.Fonts.mediumSemibold)
                                     .padding(.top)
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -103,7 +107,7 @@ struct ProductCardView: View {
                                     }
                                 } label: {
                                     Text(showAllSpecs ? "Свернуть" : "Все характеристики")
-                                        .font(.system(size: 17).weight(.bold))
+                                        .font(Constants.Fonts.mediumBold)
                                 }
                                 Spacer()
                             }
@@ -116,7 +120,7 @@ struct ProductCardView: View {
                                     
                                 } label: {
                                     Text("Все \(model.reviews.count)")
-                                        .font(.system(size: 17).weight(.bold))
+                                        .font(Constants.Fonts.mediumBold)
                                 }
                             }
                             .padding(.top)
@@ -128,7 +132,7 @@ struct ProductCardView: View {
                                     VStack {
                                         Group {
                                             Text(review.name)
-                                                .font(.system(size: 17).weight(.bold))
+                                                .font(Constants.Fonts.mediumBold)
                                             Group {
                                                 Text(review.stringDate)
                                                     .foregroundColor(.secondary)
@@ -145,7 +149,7 @@ struct ProductCardView: View {
                                                 .padding(.vertical, 2)
                                                 Text(review.description)
                                             }
-                                            .font(.system(size: 14))
+                                            .font(Constants.Fonts.small)
                                         }
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                     }
@@ -165,7 +169,7 @@ struct ProductCardView: View {
                             
                         } label: {
                             Text("Оставить отзыв")
-                                .font(.system(size: 17).weight(.bold))
+                                .font(Constants.Fonts.mediumBold)
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .padding(12)
                                 .overlay(
@@ -203,13 +207,13 @@ struct ProductCardView: View {
                 HStack {
                     if model.discountPercentage == 0 {
                         Text(String(format: "%.1f", model.price))
-                            .font(.system(size: 34).weight(.bold))
+                            .font(Constants.Fonts.bigBold)
                     } else {
                         VStack(alignment: .leading) {
                             Text(String(format: "%.1f", model.finalPrice))
                                 .font(.system(size: 32).weight(.bold))
                             Text(String(format: "%.1f", model.price))
-                                .font(.system(size: 14))
+                                .font(Constants.Fonts.small)
                                 .foregroundColor(.secondary)
                                 .strikethrough()
                         }
@@ -236,12 +240,12 @@ struct ProductCardView: View {
                         }
                         VStack {
                             Text("1 шт")
-                                .font(.system(size: 17).weight(.bold))
+                                .font(Constants.Fonts.mediumBold)
                             HStack(spacing: 0) {
                                 Text(String(format: "%.1f", 120.0))
                                 Image(systemName: "rublesign")
                             }
-                            .font(.system(size: 14))
+                            .font(Constants.Fonts.small)
                         }
                         Button {
                             
