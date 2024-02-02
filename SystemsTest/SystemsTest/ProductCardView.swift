@@ -15,6 +15,8 @@ struct ProductCardView: View {
         self.model = model
     }
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @State private var showAllSpecs = false
     @State private var selectedMethod: Method = .pc
     
@@ -151,7 +153,7 @@ struct ProductCardView: View {
                                     .frame(width: 245, height: 145)
                                     .background(
                                         RoundedRectangle(cornerRadius: 12)
-                                            .fill(Color.white)
+                                            .fill(colorScheme == .dark ? Color.black : Color.white)
                                             .shadow(radius: 6)
                                     )
                                     .padding([.leading, .vertical])
