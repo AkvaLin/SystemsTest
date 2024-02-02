@@ -30,7 +30,7 @@ struct ProductCardView: View {
                                 .font(.caption)
                                 .foregroundColor(.white)
                                 .padding(5)
-                                .background(Color.green)
+                                .background(Color.accentColor)
                                 .cornerRadius(5)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             Image(model.image)
@@ -170,7 +170,7 @@ struct ProductCardView: View {
                                 .padding(12)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .stroke(.green, lineWidth: 3)
+                                        .stroke(Color.accentColor, lineWidth: 3)
                                 )
                         }
                         
@@ -205,7 +205,7 @@ struct ProductCardView: View {
                         Text(String(format: "%.1f", model.price))
                             .font(.system(size: 34).weight(.bold))
                     } else {
-                        VStack {
+                        VStack(alignment: .leading) {
                             Text(String(format: "%.1f", model.finalPrice))
                                 .font(.system(size: 32).weight(.bold))
                             Text(String(format: "%.1f", model.price))
@@ -255,7 +255,7 @@ struct ProductCardView: View {
                     .foregroundColor(.white)
                     .background(
                         Capsule()
-                            .fill(Color.green)
+                            .fill(Color.accentColor)
                     )
                 }
                 .padding(.bottom)
@@ -266,4 +266,32 @@ struct ProductCardView: View {
     }
 }
 
-
+#Preview {
+    ProductCardView(model: ProductModel(rating: 4.1,
+                                        image: "linden",
+                                        title: "Добавка \"Липа\"\nк чаю 200 г",
+                                        region: "Испания, Риоха",
+                                        flag: "spain",
+                                        description: "Флавоноиды липового цвета обладают противовоспалительным действием, способствуют укреплению стенки сосудов.",
+                                        specifications: [
+                                            SpecificationModel(title: "Производство",
+                                                               value: "Россия, Краснодарский край"),
+                                            SpecificationModel(title: "Энергетическая ценность, ккал/100г",
+                                                               value: "25 ккал, 105 кДж"),
+                                            SpecificationModel(title: "Жиры/100г",
+                                                               value: "0,1 г"),
+                                            SpecificationModel(title: "Белки/100г",
+                                                               value: "1,3 г"),
+                                            SpecificationModel(title: "Углеводы/100г", value: "3,3 г"),
+                                            SpecificationModel(title: "Масса",
+                                                               value: "200 г")
+                                        ],
+                                        reviews: Array(repeating: ReviewModel(name: "Александр В.",
+                                                                              stringDate: "7 мая 2021",
+                                                                              rating: 4,
+                                                                              description: "Хорошая добавка, мне очень понравилась! Хочу, чтобы все добавки были такими!"),
+                                                       count: 152),
+                                        price: 199,
+                                        discountPercentage: 5,
+                                        finalPrice: 55.9))
+}
