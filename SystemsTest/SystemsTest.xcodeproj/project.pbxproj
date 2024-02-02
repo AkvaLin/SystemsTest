@@ -69,18 +69,10 @@
 		F633D32E2B6C31B4007D12FC /* SystemsTest */ = {
 			isa = PBXGroup;
 			children = (
-				F633D32F2B6C31B4007D12FC /* SystemsTestApp.swift */,
-				F633D3312B6C31B4007D12FC /* ContentView.swift */,
-				F633D33D2B6C32FC007D12FC /* ProductCardView.swift */,
-				F6116B552B6C761800952C21 /* Method.swift */,
-				F6116B532B6C714A00952C21 /* MainView.swift */,
-				F633D33F2B6C3D24007D12FC /* NavBarButton.swift */,
-				F633D3412B6C3E7F007D12FC /* ProductModel.swift */,
-				F633D3432B6C3F42007D12FC /* ReviewModel.swift */,
-				F633D3452B6C42CD007D12FC /* DiscountSymbol.swift */,
-				F633D3472B6C538A007D12FC /* SpecificationModel.swift */,
-				F633D3492B6C5703007D12FC /* DottedSpacer.swift */,
-				F633D3332B6C31B5007D12FC /* Assets.xcassets */,
+				F6F88CF92B6CF0D8005CF368 /* App */,
+				F6F88CF32B6CF045005CF368 /* Modules */,
+				F6F88CF42B6CF05B005CF368 /* UIElements */,
+				F6F88CFB2B6CF136005CF368 /* Resources */,
 				F633D3352B6C31B5007D12FC /* Preview Content */,
 			);
 			path = SystemsTest;
@@ -92,6 +84,78 @@
 				F633D3362B6C31B5007D12FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6F88CF32B6CF045005CF368 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F6F88CF62B6CF091005CF368 /* ProductCard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F6F88CF42B6CF05B005CF368 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				F633D3492B6C5703007D12FC /* DottedSpacer.swift */,
+				F633D33F2B6C3D24007D12FC /* NavBarButton.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		F6F88CF62B6CF091005CF368 /* ProductCard */ = {
+			isa = PBXGroup;
+			children = (
+				F6F88CF72B6CF099005CF368 /* Views */,
+				F6F88CF82B6CF0A2005CF368 /* Models */,
+				F6F88CFA2B6CF100005CF368 /* Support */,
+			);
+			path = ProductCard;
+			sourceTree = "<group>";
+		};
+		F6F88CF72B6CF099005CF368 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F633D33D2B6C32FC007D12FC /* ProductCardView.swift */,
+				F633D3452B6C42CD007D12FC /* DiscountSymbol.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6F88CF82B6CF0A2005CF368 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F633D3412B6C3E7F007D12FC /* ProductModel.swift */,
+				F633D3432B6C3F42007D12FC /* ReviewModel.swift */,
+				F633D3472B6C538A007D12FC /* SpecificationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6F88CF92B6CF0D8005CF368 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F633D3312B6C31B4007D12FC /* ContentView.swift */,
+				F633D32F2B6C31B4007D12FC /* SystemsTestApp.swift */,
+				F6116B532B6C714A00952C21 /* MainView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F6F88CFA2B6CF100005CF368 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F6116B552B6C761800952C21 /* Method.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F6F88CFB2B6CF136005CF368 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F633D3332B6C31B5007D12FC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
