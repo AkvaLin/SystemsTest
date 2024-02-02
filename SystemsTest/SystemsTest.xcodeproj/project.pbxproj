@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6116B542B6C714A00952C21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6116B532B6C714A00952C21 /* MainView.swift */; };
+		F6116B562B6C761800952C21 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6116B552B6C761800952C21 /* Method.swift */; };
 		F633D3302B6C31B4007D12FC /* SystemsTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D32F2B6C31B4007D12FC /* SystemsTestApp.swift */; };
 		F633D3322B6C31B4007D12FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3312B6C31B4007D12FC /* ContentView.swift */; };
 		F633D3342B6C31B5007D12FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F633D3332B6C31B5007D12FC /* Assets.xcassets */; };
 		F633D3372B6C31B5007D12FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F633D3362B6C31B5007D12FC /* Preview Assets.xcassets */; };
+		F633D33E2B6C32FC007D12FC /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D33D2B6C32FC007D12FC /* ProductCardView.swift */; };
+		F633D3402B6C3D24007D12FC /* NavBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D33F2B6C3D24007D12FC /* NavBarButton.swift */; };
+		F633D3422B6C3E7F007D12FC /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3412B6C3E7F007D12FC /* ProductModel.swift */; };
+		F633D3442B6C3F42007D12FC /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3432B6C3F42007D12FC /* ReviewModel.swift */; };
+		F633D3462B6C42CD007D12FC /* DiscountSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3452B6C42CD007D12FC /* DiscountSymbol.swift */; };
+		F633D3482B6C538A007D12FC /* SpecificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3472B6C538A007D12FC /* SpecificationModel.swift */; };
+		F633D34A2B6C5703007D12FC /* DottedSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633D3492B6C5703007D12FC /* DottedSpacer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6116B532B6C714A00952C21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F6116B552B6C761800952C21 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		F633D32C2B6C31B4007D12FC /* SystemsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F633D32F2B6C31B4007D12FC /* SystemsTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsTestApp.swift; sourceTree = "<group>"; };
 		F633D3312B6C31B4007D12FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F633D3332B6C31B5007D12FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F633D3362B6C31B5007D12FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F633D33D2B6C32FC007D12FC /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		F633D33F2B6C3D24007D12FC /* NavBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarButton.swift; sourceTree = "<group>"; };
+		F633D3412B6C3E7F007D12FC /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		F633D3432B6C3F42007D12FC /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
+		F633D3452B6C42CD007D12FC /* DiscountSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountSymbol.swift; sourceTree = "<group>"; };
+		F633D3472B6C538A007D12FC /* SpecificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificationModel.swift; sourceTree = "<group>"; };
+		F633D3492B6C5703007D12FC /* DottedSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedSpacer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,15 @@
 			children = (
 				F633D32F2B6C31B4007D12FC /* SystemsTestApp.swift */,
 				F633D3312B6C31B4007D12FC /* ContentView.swift */,
+				F633D33D2B6C32FC007D12FC /* ProductCardView.swift */,
+				F6116B552B6C761800952C21 /* Method.swift */,
+				F6116B532B6C714A00952C21 /* MainView.swift */,
+				F633D33F2B6C3D24007D12FC /* NavBarButton.swift */,
+				F633D3412B6C3E7F007D12FC /* ProductModel.swift */,
+				F633D3432B6C3F42007D12FC /* ReviewModel.swift */,
+				F633D3452B6C42CD007D12FC /* DiscountSymbol.swift */,
+				F633D3472B6C538A007D12FC /* SpecificationModel.swift */,
+				F633D3492B6C5703007D12FC /* DottedSpacer.swift */,
 				F633D3332B6C31B5007D12FC /* Assets.xcassets */,
 				F633D3352B6C31B5007D12FC /* Preview Content */,
 			);
@@ -137,8 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F633D33E2B6C32FC007D12FC /* ProductCardView.swift in Sources */,
+				F633D3462B6C42CD007D12FC /* DiscountSymbol.swift in Sources */,
 				F633D3322B6C31B4007D12FC /* ContentView.swift in Sources */,
+				F6116B542B6C714A00952C21 /* MainView.swift in Sources */,
 				F633D3302B6C31B4007D12FC /* SystemsTestApp.swift in Sources */,
+				F633D3402B6C3D24007D12FC /* NavBarButton.swift in Sources */,
+				F633D3482B6C538A007D12FC /* SpecificationModel.swift in Sources */,
+				F633D3422B6C3E7F007D12FC /* ProductModel.swift in Sources */,
+				F633D34A2B6C5703007D12FC /* DottedSpacer.swift in Sources */,
+				F633D3442B6C3F42007D12FC /* ReviewModel.swift in Sources */,
+				F6116B562B6C761800952C21 /* Method.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
