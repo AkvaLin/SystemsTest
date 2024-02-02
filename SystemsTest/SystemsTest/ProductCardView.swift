@@ -241,7 +241,6 @@ struct ProductCardView: View {
                             }
                             .font(.system(size: 14))
                         }
-                        .padding(4)
                         Button {
                             
                         } label: {
